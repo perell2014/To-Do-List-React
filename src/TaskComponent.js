@@ -4,9 +4,8 @@ class TaskComponent extends Component {
    render () {
      return (
        <div>
-       <span>{this.props.task}     </span>  
-       <button id = {this.props.id} onClick = {() => this.props.handleDelete(this.props.id)}>Delete</button>
-       
+        <span>{this.props.task}</span><input type="checkbox" />  
+        <button id = {this.props.id} onClick = {() => this.props.handleDelete(this.props.id)}>Delete</button>
        </div>
      )
    }
